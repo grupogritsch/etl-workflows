@@ -14,7 +14,7 @@ PATH_DATASETS = Variable.get("PATH_DATASETS")
 
 default_args = {
     'depends_on_past': False,
-    'start_date': datetime(2025, 2, 17),
+    'start_date': datetime(2025, 4, 15, 3, 0), 
     'email': ['fabio@gritsch.com.br'],
     'email_on_failure': True,
     'email_on_retry': False,
@@ -26,7 +26,7 @@ with DAG(
     'ExtractSourcesTorreTransacoesDiario',
     tags=['TruckPag','API', 'Torre de Controle', 'Extracão', 'Diário', 'Sources'],
     default_args = default_args,
-    schedule_interval = None,
+    schedule_interval='0 1 * * *',
     catchup = False,
 ) as dag:
     
