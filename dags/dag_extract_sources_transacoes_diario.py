@@ -14,7 +14,7 @@ PATH_DATASETS = Variable.get("PATH_DATASETS")
 
 default_args = {
     'depends_on_past': False,
-    'start_date': datetime(2025, 4, 15, 3, 0), 
+    'start_date': datetime(2025, 4, 14, 3, 0), 
     'email': ['fabio@gritsch.com.br'],
     'email_on_failure': True,
     'email_on_retry': False,
