@@ -1,0 +1,41 @@
+{
+    "Datasets_TorreTransacoes": "TorreTransacoes",
+    "PATH_DATASETS": "/opt/airflow/datasets/",
+    "raw_fretes_esl": [
+        [
+            "Fretes",
+            7116
+        ],
+        [
+            "FretesAtores",
+            7119
+        ],
+        [
+            "FretesConferencias",
+            7144
+        ],
+        [
+            "FretesDinamico",
+            7142
+        ],
+        [
+            "FretesExcluidos",
+            7161
+        ],
+        [
+            "FretesFaturas",
+            7143
+        ],
+        [
+            "FretesManifestos",
+            7145
+        ],
+        [
+            "FretesOcorrencias",
+            7140
+        ]
+    ],
+    "torre_transacoes_data_fim": 20250215,
+    "torre_transacoes_data_inicio": 20250215,
+    "torre_transacoes_todas": "S"
+}
