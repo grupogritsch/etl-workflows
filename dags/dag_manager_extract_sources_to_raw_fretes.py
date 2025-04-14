@@ -7,7 +7,7 @@ import time
 
 default_args = {
     'depends_on_past': False,
-    'start_date': datetime(2025, 2, 17),
+    'start_date': datetime(2025, 4, 15, 3, 0),  # 15 de abril de 2025 às 03:00
     'retries': 1,
     'retry_delay': timedelta(seconds=10),
 }
@@ -19,7 +19,7 @@ with DAG(
     'ManagerExtractSourcesFretes',
     tags=['ESL', 'API', 'Planejamento', 'Extração', 'Diário', 'Fretes', 'Manager'],
     default_args=default_args,
-    schedule_interval=None,
+    schedule_interval='0 3 * * *',
     catchup=False,
 ) as dag:
 
