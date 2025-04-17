@@ -19,7 +19,7 @@ with DAG(
     'ManagerExtractSourcesFretes',
     tags=['ESL', 'API', 'Planejamento', 'Extração', 'Diário', 'Fretes', 'Manager'],
     default_args=default_args,
-    schedule_interval='0 3 * * *',
+    schedule_interval=None,
     catchup=False,
 ) as dag:
 

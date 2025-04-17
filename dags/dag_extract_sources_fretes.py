@@ -91,5 +91,5 @@ with DAG(
     # Definição da ordem de execução
     tsk_retornar_datas >> tsk_solicitar_relatorio >> tsk_buscar_url_arquivo
     tsk_buscar_url_arquivo >> tsk_baixar_arquivo >> tsk_xlsx_to_parquet >> dag_sources_to_raw
-    dag_sources_to_raw >> dag_raw_to_bronze
+    dag_sources_to_raw# >> dag_raw_to_bronze
 

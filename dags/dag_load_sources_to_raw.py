@@ -34,4 +34,6 @@ with DAG(
         },
         owner='César',
     )
+
+    tsk_sources_to_raw
     
