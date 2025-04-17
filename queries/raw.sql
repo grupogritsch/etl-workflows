@@ -76,6 +76,7 @@ CREATE TABLE IF NOT EXISTS public."Fretes" (
     "MercadoriaPesoCubado" TEXT,
     "MercadoriaPesoM3" TEXT,
     "MercadoriaPesoTaxado" TEXT,
+    "MercadoriEtiqueta" TEXT,
     "FiscalBaseIcms" TEXT,
     "FiscalAliquotaIcms" TEXT,
     "FiscalValorIcms" TEXT,
@@ -167,6 +168,7 @@ CREATE TABLE IF NOT EXISTS public."FretesDinamico" (
     "AgenteColetaAdicional" TEXT,
     "AgenteColetaTotal" TEXT,
     "SeguroAverbacao" TEXT,
+    "MercadoriaLocalizacaoAtual" TEXT,
     "FaturaID" TEXT,
     "Atualizacao" TEXT,
     CONSTRAINT fretes_dinamico_unique UNIQUE ("ID")

@@ -12,7 +12,7 @@ PATH_DATASETS = Variable.get("PATH_DATASETS")
 
 def retornar_datas():
     """Retorna as datas no formato esperado."""
-    ontem = (datetime.now() - timedelta(days=3)).strftime('%d/%m/%Y')
+    ontem = (datetime.now() - timedelta(days=1)).strftime('%d/%m/%Y')
     ano = (datetime.now() - timedelta(days=365)).strftime('%d/%m/%Y')
     return {
         "PERIODO": f'{ontem} - {ontem}',
